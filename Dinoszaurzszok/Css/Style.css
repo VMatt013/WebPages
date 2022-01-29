@@ -1,0 +1,55 @@
+:root{
+    --hdr-clr:rgba(255, 197, 142 , 0.7);;
+   --btn-clr: #ffdfd3;
+   --btn-hover-clr-: var(--second-clr);
+   --btn-active-clr-: var(--main-clr);
+   --txt-clr: white;
+   --bg-clr: #cccccc;
+
+   --main-clr:#9292D1;
+   --second-clr: #C1e3fe;
+}
+
+::-webkit-scrollbar{
+   width: 10px;
+}
+::-webkit-scrollbar-track{
+   background-color: var(--hdr-clr);
+}
+::-webkit-scrollbar-thumb{
+   border: var(--hdr-clr) 2px solid;
+   background-color: var(--btn-clr);
+   border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:active{
+   background-color: var(--btn-active-clr-); 
+}
+
+html{
+   overflow-y: scroll;
+   scroll-behavior: smooth;
+   background-image:url('../Img/Jungle-1.jpg');
+   background-size: cover;
+}
+
+#fejlec{
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(105, 63, 38);
+    border-radius: 30%; 
+    width: 45%;
+}
+
+.button{
+    display: inline-block;
+    margin: 15% 20% 15% 20%;
+    width: 100px;
+    height: 100px;
+    background-color: red; 
+    border:green 2px solid;  
+}
+#main{
+    margin: auto;
+}

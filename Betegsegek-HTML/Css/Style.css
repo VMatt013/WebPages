@@ -1,0 +1,383 @@
+:root{
+   --hdr-clr: rgb(16, 49, 139);
+   --btn-clr: rgb(28, 93, 146);
+   --btn-hover-clr-: #58126d;
+   --btn-active-clr-: #3f0850;
+   --txt-clr: black;
+   --bg-clr: #1a1a1c;
+
+   --main-clr:rgb(44, 174, 214);
+   --second-clr: rgb(192, 209, 245);
+
+   margin-left: 0;
+}
+
+::-webkit-scrollbar{
+   width: 10px;
+}
+::-webkit-scrollbar-track{
+   background-color: var(--hdr-clr);
+}
+::-webkit-scrollbar-thumb{
+   border: var(--hdr-clr) 2px solid;
+   background-color: var(--btn-clr);
+   border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:active{
+   background-color: var(--btn-active-clr-); 
+}
+
+html{
+   overflow-y: scroll;
+   scroll-behavior: smooth;
+}
+
+body{
+   width: 100%;
+    margin: 0;
+    padding:0;
+    color: var(--txt-clr);
+    background-color: var(--bg-clr);
+    background-image: url("../Img/Bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: 120%;
+    color: #000000;
+}
+.debug{
+   visibility: hidden;
+}
+
+header{
+   position:sticky;
+   background-color: var(--hdr-clr);
+   top:0px;
+   z-index: 999;
+}
+
+nav{
+   width: 100%;
+   height: 7.5%;
+}
+
+table{
+   height: 100%;
+   margin-inline:auto;
+}
+
+tr>td{
+padding-inline: 5px;
+}     
+
+.r-b{
+   border-right: 7px solid black;        
+}
+
+.navbutton {
+   background-color: var(--btn-clr);
+   border: none;
+   border-radius: 40px;
+   color: black;
+   padding: 1.5vh 30px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 22px;
+   font-weight: bold;
+   transition-duration: 0.75s;
+}
+.navbutton:hover,
+.navbutton:focus-visible
+{
+   background-color: var(--btn-hover-clr-);
+   transition: 0,5s;
+   transform: scale(1.05);
+   transition-duration: 0,5s;
+}
+
+.navbutton:active{
+   background-color: var(--btn-active-clr-);
+   transition: 0,5s;
+   transition-duration: 0,5s;
+}
+
+.navbutton.active{
+   background-color: var(--btn-active-clr-);
+}
+
+h1,h2{
+   color: var(--main-clr);
+   float: left;
+   font-size: 0;
+   visibility: visible;
+}
+h2{
+    margin-inline-start: 0%;
+}
+h3{
+   margin: 5px;
+}
+
+span{
+   color: var(--second-clr);
+}
+
+span.sad{
+   color: red;
+}
+
+div.main{
+   padding: 5% 1% 5% 1%;
+   min-height: 90vh;
+   background-repeat : no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+div.content{
+   margin-top: 10px;
+   padding: 30px;
+   border-radius: 45px;
+   background-color: rgba(127, 188, 212, 0.835);
+   width: 80%;
+   border: black solid 1px;
+}
+
+#content{
+   margin: auto;
+   vertical-align: middle;
+   text-align: center;
+   font-size: 12px;
+}
+
+a{
+   text-decoration: none;
+   text-align: center;
+}
+
+.Button{
+   height: 400px;
+   width: 350px;
+   display:inline-block; 
+   background-color: var(--btn-clr);
+   color: white;
+   clear: none;
+   font-size: 30px;
+   border-radius: 10%;
+   transition: 0.5s;
+   transition-duration: 0.75s;
+   border: 2px solid black; 
+   font-weight: bold;
+   margin: 15% 5% 0% 5%;
+}
+
+a.Side-btn{
+   height: 300px;
+   width: 250px;
+   margin: 5% 10% 0% 10%;
+}
+
+
+img.button{
+   width: 350px;
+   height: 350px;
+   border-radius: 10% 10% 0% 0%;
+   border-bottom: 1px black solid;
+}
+
+img.Side-btn{
+   height: 250px;
+   width: 250px;
+}
+
+ 
+ .button:active{
+    transition: 0,5s;
+    transition-duration: 0,5s;
+ }
+
+ .Button:hover,
+ .Button:focus-visible{
+    background-color: var(--btn-hover-clr-);
+    transition: 0.5s;
+    transition-duration: 0.5s;
+    transform: scale(1.05);
+    transition-duration: 0,5s;
+ }
+
+ p{
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.tooltip {
+   position: relative;
+   display: inline-block;
+ }
+
+ .tooltiptext{
+   width:150px;
+   background-color: rgba(198, 233, 246, 0.787);
+   border: 1px black solid;
+   font-size: 20px;
+   color: black;
+   text-align: center;
+   border-radius: 6px;
+   padding: 5px 0;   
+   top: 15px;
+   transition: 0.5s;
+   transition-duration: 0.25s;
+   visibility: hidden;
+   position: absolute;
+   z-index: 1;
+   opacity: 0;
+   transition: opacity 0.5s;
+ }
+ 
+.l-tooltip .tooltiptext{
+   left: 102.5%;   
+}
+
+.r-tooltip .tooltiptext{
+   /*left: 0;*/
+   right: 102.5%;
+}
+ 
+.r-tooltip:hover .tooltiptext,.l-tooltip:hover .tooltiptext,.Button:focus-visible .tooltiptext{
+   visibility: visible;
+   opacity: 1;
+   transition: opacity 1s;
+   transition-duration: 1s;
+}
+
+ .r-tooltip .tooltiptext::after {
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 100%;
+   right: 0%;
+   margin-top: -5px;
+   border-width: 5px;
+   border-style: solid;
+   border-color: transparent transparent transparent black;
+ }
+
+ .l-tooltip .tooltiptext::after {
+   content: "";
+   position: absolute;
+   top: 50%;
+   right: 100%;
+   margin-top: -5px;
+   border-width: 5px;
+   border-style: solid;
+   border-color: transparent black transparent transparent;
+ }
+
+
+/* DARK */
+@media (prefers-color-scheme: dark) {
+   :root{
+      --hdr-clr: rgb(16, 49, 139);
+      --btn-clr: rgb(28, 93, 146);
+      --btn-hover-clr-: #58126d;
+      --btn-active-clr-: #3f0850;
+      --txt-clr: black;
+      --bg-clr: #1a1a1c;
+
+      --main-clr:rgb(44, 174, 214);
+      --second-clr: rgb(192, 209, 245);
+   }
+
+   body{       
+      color: var(--txt-clr);
+      background-color: var(--bg-clr);
+   }
+
+   header{       
+      background-color: var(--hdr-clr);        
+   }
+      
+   .navbutton {
+      background-color: var(--btn-clr);               
+      color: black;               
+   }
+   .navbutton:hover
+   {
+      color: white;
+      background-color: var(--btn-hover-clr-);
+   }
+
+   .navbutton:active{
+      background-color: var(--btn-active-clr-);
+   }
+   
+   .navbutton.active{
+      color: white;      
+   }
+
+   h1{
+   color: var(--main-clr);   
+   }
+
+   span{
+      color: var(--second-clr);
+   }
+}
+
+@media only screen and (min-width: 1080px) {
+
+   body{
+      margin: 0;
+      padding: 0px;
+   }
+
+   nav{
+      height: 70px;
+   }
+
+   table{
+      height: 100%;
+      float: right;
+   }
+
+   tr>td{
+      padding-inline: 5px;
+   }     
+
+   .r-b{
+      border-right: 4px solid black;        
+   }
+
+   .navbutton {
+      border-radius: 20px;
+      padding: 10px 25px;
+      font-size: 16px;
+      transition-duration: 0.75s;
+   }
+
+   h1,h2{
+      float: left;
+      margin-inline-start: 2%;
+      padding-inline-end: 5px;
+      vertical-align: middle;
+      font-size: 25px;
+   }
+   h2{
+      margin-inline-start: 0%;
+      padding-inline: 5px;
+   }
+
+   div.main{
+      padding: 1% 1% 1% 1%;
+      background-repeat : no-repeat;
+      background-size:cover;
+   }
+
+   div.content{
+      padding: 26px;
+      border-radius: 45px;
+      width: 85%;
+      margin-inline: auto;
+   }
+
+}

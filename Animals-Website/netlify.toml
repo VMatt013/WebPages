@@ -1,0 +1,4 @@
+[[redirects]]
+    from = "*"
+    to = "/Html/NoPage.html"
+    status = 404    

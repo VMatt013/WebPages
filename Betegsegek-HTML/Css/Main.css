@@ -1,0 +1,49 @@
+#content{
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 12px;
+}
+
+#Button{
+    margin: auto;
+    height: auto;
+    width: 350px;
+    display:inline-block; 
+    background-color: rgb(16, 49, 139);
+    color: white;
+    clear: none;
+    margin: 0;
+    font-size: 30px;
+    border-radius: 10%;
+    margin: 2.5% 5% 0% 5% ;
+    transition: 0.5s;
+    transition-duration: 0.75s;
+    border: 2px solid black; 
+    font-weight: bold;
+}
+
+img.button{
+    width: 350px;
+    height: 350px;
+    border-radius: 10% 10% 0% 0%;
+}
+ 
+ .button:active{
+    transition: 0,5s;
+    transition-duration: 0,5s;
+ }
+
+ #Button:hover,#Button:focus-visible{
+    background-color: #58126d;
+    color: white;
+    transition: 0.5s;
+    transition-duration: 0.5s;
+    transform: scale(1.05);
+    transition-duration: 0,5s;
+ }
+
+p{
+    margin-top: 0;
+    margin-bottom: 15px;
+}
