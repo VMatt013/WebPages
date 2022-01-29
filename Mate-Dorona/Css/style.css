@@ -1,0 +1,112 @@
+:root{
+    --hdr-clr:rgba(255, 197, 142 , 0.7);;
+   --btn-clr: #ffdfd3;
+   --btn-hover-clr-: var(--second-clr);
+   --btn-active-clr-: var(--main-clr);
+   --txt-clr: white;
+   --bg-clr: #cccccc;
+   --clr-1: #FFF1AC;
+   --main-clr:#9292D1;
+   --second-clr: #C1e3fe;
+   --txt-size-title: 50px;
+   --txt-size-main: 25px;
+   --txt-fm-main: 'Bad Script';
+}
+
+html{
+   background-color: var(--main-clr);
+   margin:0;
+}
+::-webkit-scrollbar{
+   width: 10px;
+}
+::-webkit-scrollbar-track{
+   background-color: var(--hdr-clr);
+}
+::-webkit-scrollbar-thumb{
+   border: var(--hdr-clr) 2px solid;
+   background-color: var(--btn-clr);
+   border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:active{
+   background-color: var(--btn-active-clr-); 
+}
+
+div{
+   
+}
+
+#fejlec{
+   margin: 2.5vh auto 5vh auto;
+}
+
+#title{
+   text-align: center;
+   font-weight: bolder;
+   font-size: var(--txt-size-title);
+   font-family: var(--txt-fm-main);
+   color: var(--second-clr);
+   background-color: var(--clr-1);
+   border-radius: 10vh;
+   width: 50vw;
+   margin: 2.5vh auto 5vh auto;
+   display:block;   
+}
+
+#icon{
+   border-radius: 5vh;
+   text-align: left;
+}
+
+#home{
+   margin: auto;
+   border-radius: 10vw;
+}
+
+
+#VideoPlayer{
+   text-align: center;
+   clear: left;
+   width: 70%; 
+   height: 70vh;
+   margin:5px;
+   float: left;
+   border: var(--clr-1) 3px solid;
+   border-radius: 2.5vh;
+}
+
+.spotify{
+   width: 25%; 
+   height: 380px;
+   clear: left;
+   border: var(--clr-1) 3px solid;
+   margin:0 0 0px 0;
+   float: right;
+   clear: none;
+   border-radius: 5vh;
+}
+#Érettségi-playlist-yo{
+   border-bottom: 0px;
+   border-radius: 2.5vh 2.5vh 0 0;
+}
+#Blueberries{
+   border-top: 2px var(--clr-1) solid;
+   border-radius: 0 0 2.5vh 2.5vh;
+}
+
+.content{
+   margin:auto;
+   text-align: center;
+   background-color: var(--clr-1);
+   font-size: var(--txt-size-main);
+   font-family: var(--txt-fm-main);
+   border-radius: 2.5vh;
+   width: 60vw;
+}
+
+#toMain{
+   margin: 0 35vw 0 35vw;
+   display: inline-block;
+   text-align: center;
+}
