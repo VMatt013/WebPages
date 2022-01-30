@@ -34,7 +34,7 @@ html{
 }
 
 div{
-   
+   clear: both;
 }
 
 #fejlec{
@@ -109,4 +109,19 @@ div{
    margin: 0 35vw 0 35vw;
    display: inline-block;
    text-align: center;
+}
+
+.bottomT{
+   width: 50vw;
+   margin: 0 30vh 5vh auto;
+   float: left;
+   display: inline;
+
+   text-align: center;
+   font-weight: bolder;
+   font-size: var(--txt-size-title);
+   font-family: var(--txt-fm-main);
+   color: var(--second-clr);
+   background-color: var(--clr-1);
+   border-radius: 10vh;
 }
