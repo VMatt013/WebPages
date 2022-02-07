@@ -9,8 +9,10 @@
    --main-clr:#9292D1;
    --second-clr: #C1e3fe;
 
-   --txt-size-main: 30px;
-   --txt-size-title: 30px;
+   --txt-size-main: 20px;
+   --txt-size-title1: 45px;
+   --txt-size-title2: 30px;
+   --txt-size-title3: 25px;
 }
 
 ::-webkit-scrollbar{
@@ -32,35 +34,186 @@
 html{
    overflow-y: scroll;
    scroll-behavior: smooth;
-   background-image:url('../Img/Jungle-1.jpg');
+   background-image:url('../Img/Jungle-2.jpg');
    background-size: cover;
+   text-align: justify;
 }
 
 #fejlec{
-   margin: auto;
+   margin: 0 auto 2.5vh auto;
    text-align: center;
    vertical-align: middle;
-   background-color: rgb(105, 63, 38);
-   border-radius: 30%; 
-   width: 45%;
+   border-radius: 40%; 
+   width: 25vw;
+   height: auto;
+   background-image: url('../Img/Rock-1.jpg');
+   background-size: cover;
+   background-position: center;
+   border: 2px solid black;
+   color: white;
+   text-shadow:  1px 1px black;
+   font-family: 'Bilbo';
 }
 h1{
-   font-size: var(--txt-size-title);
+   font-size: var(--txt-size-title1);
 }
 
 .button{
+   position: absolute;
+   top: 10vh;
    text-decoration: none;
+   color: white;
+   font-size: var(--txt-size-title2);
+   text-align: center;
    display: inline-block;
    margin: 15% 10vw 15% 10vw;
-   width: 100px;
-   height: 100px;
-   background-color: red; 
-   border:green 2px solid;  
+   width: 200px;
+   height: 200px;
+   background-image: url('../Img/Rock-2.jpg');
+   background-size: cover;
+   background-position: center;
+   border:black 2px solid;
+   border-radius: 35%;  
+}
+.button:hover{
+   border:red 2px solid;
+}
+
+.left
+{
+   float: left;
+   left: 20vw;
+   }
+.right
+{
+   float: right;
+   right: 20vw;
+}
+#footprint{
+   width: auto;
+   height: 200px;
+   background-position: center;
+   clear: none;   
+   opacity: 0;
+   transition: 1s;
+   transition-duration: 0.5s;
+}
+#footprint:hover{
+   opacity: 1;
 }
 #main{
    text-align: center;
+   vertical-align: middle;
+}
+
+h2,h3{
+   text-align: center;
+}
+h2{
+   margin: 7.5px 0 7.5px 0;
+   font-size: var(--txt-size-title2);
+}
+h3{
+   margin: 5px 0 5px 0;
+   font-size: var(--txt-size-title3);
+}
+
+.content{
+   position: relative;
+   margin: auto auto 10px auto;
+   border: solid black 1px;
+   background-color: rgba(184, 109, 12, 0.75);
+   border-radius: 2.0vw;
+   width: 90%;
+   padding: 10px;
+   text-shadow:  0.5px 0.5px black;
+   font-family: 'Exo';
+   font-size: var(--txt-size-main);
+}
+
+.navigation-btn
+{
+   display: inline-block;
+   width: 10vw;
+   height: 6.5vh;
+   background-image: url('../Img/Rock-2.jpg');
+   background-position: center;
+   background-size: cover;
+   border-radius: 2vw;
+   border: 2px solid black;
+   text-align: center;
+   vertical-align: middle;
+   color: white;
    margin: auto;
 }
-.content{
-background-color: red;
+.navigation-img{
+   width: auto;
+   height: 6.5vh;
+}
+
+.navigation-btn:hover,
+.navigation-btn:focus-visible{
+   border: solid 2px red;
+}
+
+#dino-img{
+   display: block;
+   width: 30vw;
+   float: left;
+   margin: 0;
+}
+#dino-txt{
+   background-color: bisque;
+   border-radius: 0.5vw;
+   width: 26vw;
+}
+#dino-idoszak{
+   display: flex;
+   margin: 0;
+}
+.idoszak{
+   display: inline-block;
+   height: 2.5vh;
+   width: 5vw;
+   border: solid 1px black;
+   background-color: red;
+   margin: 0;
+   text-align: center;
+}
+.ez{
+   background-color: green;
+}
+.dino-holder{
+   position: absolute;
+   bottom: 10vh;
+   left: 20vw;
+
+   margin: auto;
+   border: solid black 1px;
+   background-color: rgba(184, 110, 12, 0.808);
+   border-radius: 2.0vw;
+   width: 60%;
+   padding: 10px;
+   text-shadow:  0.5px 0.5px black;
+   font-family: 'Exo';
+   font-size: var(--txt-size-main);
+   margin: auto;
+   display: none;
+}
+.b{
+   border-radius: 2vw 0 0 2vw;
+}
+.j{
+   border-radius: 0 2vw 2vw 0;
+}
+
+.dino{
+   color: red;
+}
+.dino:hover{
+   color: blue;
+}
+
+.kerek{
+   border-radius: 0.5vw;
 }
