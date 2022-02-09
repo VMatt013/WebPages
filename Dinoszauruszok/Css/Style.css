@@ -1,3 +1,24 @@
+/* bilbo-regular - latin-ext_latin */
+@font-face {
+   font-family: 'Bilbo';
+   font-style: normal;
+   font-weight: 400;
+   src: local(''),
+        url('../fonts/bilbo-v18-latin-ext_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/bilbo-v18-latin-ext_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+ }
+
+/* exo-regular - latin-ext_latin */
+@font-face {
+   font-family: 'Exo';
+   font-style: normal;
+   font-weight: 400;
+   src: local(''),
+        url('../fonts/exo-v18-latin-ext_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/exo-v18-latin-ext_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+ }
+
+
 :root{
    --hdr-clr:rgba(255, 197, 142 , 0.7);;
    --btn-clr: #ffdfd3;
