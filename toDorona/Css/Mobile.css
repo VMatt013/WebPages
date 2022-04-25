@@ -32,7 +32,7 @@ body{
 }
 
 #Playlist{
-    height: 80px;
+    height: 10vh;
     width: 60vw;
     float: left;
     margin: 5vh 0 0 0;
