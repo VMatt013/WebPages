@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(180, 213, 241);
+}
+
+#Main{
+    margin: auto;
+    text-align: center;
+}
+
+.button{
+    background-color: red;
+    border: 2px solid black;
+    margin: auto;
+    display: inline-block;
+    max-height: 5em;
+    width: 10em;
+    padding: 2em 0 2em 0;
+    margin: 1em;
+
+    border-radius: 1em;
+}
+
