@@ -10,7 +10,7 @@ function Btn(Name){
     var node = document.createElement("a");
     node.innerHTML = Name;
     node.setAttribute("class","button");
-    node.setAttribute("href",Name);
+    node.setAttribute("href",Name+'/index.html');
     document.getElementById("Main").appendChild(node);
   }
 
